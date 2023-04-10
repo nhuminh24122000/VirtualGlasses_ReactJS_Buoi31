@@ -1,13 +1,88 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.VRglasses {
+  background-image: url("../public/glassesImage/background.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg {
+  background-color: rgba(0, 0, 0, 0.485);
+}
+
+.title {
+  background-color: rgba(0, 0, 0, 0.485);
+  margin-bottom: 50px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.imgModel {
+  border-radius: 10px;
+  width: 80%;
+}
+
+.glassesImage {
+  position: relative;
+}
+
+.glassesModel {
+  position: absolute;
+  top: 26%;
+}
+
+.glassesModelImage {
+  width: 55%;
+}
+
+.glassesDetail {
+  border-radius: 10px;
+  position: absolute;
+  width: 76%;
+  min-height: 30%;
+  bottom: 0px;
+  padding: 10px 20px 0 20px;
+  background-color: rgba(197, 101, 33, 0.46);
+  color: white;
+  transition: all 0.5s;
+  opacity: 0;
+  text-align: left;
+}
+
+.detail1 {
+  color: #45298b;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 991.98px) {
+  .glassesModelImage {
+    width: 45%;
+  }
+  .glassesDetail {
+    min-height: 20%;
+  }
+  .detail1 {
+    text-align: center;
+  }
+  .detail2 {
+    display: none;
+  }
+}
+
+.glassesList {
+  background-color: #fff;
+  margin: 52px 0;
 }
